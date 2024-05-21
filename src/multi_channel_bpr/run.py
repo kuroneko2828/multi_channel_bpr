@@ -51,8 +51,8 @@ def main(args):
     channels = get_channels(ratings)
 
     reg_params = {'u': args.reg_param_list[0],
-                  'i': args.reg_param_list[0],
-                  'j': args.reg_param_list[0]}
+                  'i': args.reg_param_list[1],
+                  'j': args.reg_param_list[2]}
 
     kf = KFold(n_splits=args.n_folds, random_state=args.rd_seed, shuffle=True)
     split_count = 0
